@@ -4,19 +4,13 @@
       <div class="row mb-5">
         <div class="col-md">
           <div class="ftco-footer-widget mb-4">
-            <h2 class="ftco-footer-logo">
-              DAVAO <span>IT</span> Solutions
-            </h2>
+            <p>
+              <img :src="logoH" style="width:100%">
+            </p>
             <p>We are team of talented designers making websites with Bootstrap, VueJs, NuxtJs, Laravel and CodeIgniter.</p>
             <ul class="ftco-footer-social list-unstyled mt-2">
-              <li class="ftco-animate">
-                <a href="#"><span class="fa fa-twitter" /></a>
-              </li>
-              <li class="ftco-animate">
-                <a href="#"><span class="fa fa-facebook" /></a>
-              </li>
-              <li class="ftco-animate">
-                <a href="#"><span class="fa fa-instagram" /></a>
+              <li>
+                <a target="_blank" href="https://www.facebook.com/DavaoInformationTechnologySolutions/"><span class="fa fa-facebook" /></a>
               </li>
             </ul>
           </div>
@@ -27,12 +21,26 @@
               Explore
             </h2>
             <ul class="list-unstyled">
-              <li><a href="#" class="py-2 d-block">About</a></li>
-              <li><a href="#" class="py-2 d-block">Contact</a></li>
-              <li><a href="#" class="py-2 d-block">What We Do</a></li>
-              <li><a href="#" class="py-2 d-block">Plans &amp; Pricing</a></li>
-              <li><a href="#" class="py-2 d-block">Refund Policy</a></li>
-              <li><a href="#" class="py-2 d-block">Call Us</a></li>
+              <li>
+                <router-link to="/about" class="py-2 d-block">
+                  About
+                </router-link>
+              </li>
+              <li>
+                <router-link to="/contact" class="py-2 d-block">
+                  Contact
+                </router-link>
+              </li>
+              <li>
+                <router-link to="/about" class="py-2 d-block">
+                  What We Do
+                </router-link>
+              </li>
+              <li>
+                <router-link to="/contact" class="py-2 d-block">
+                  Contact Us
+                </router-link>
+              </li>
             </ul>
           </div>
         </div>
@@ -42,12 +50,26 @@
               Legal
             </h2>
             <ul class="list-unstyled">
-              <li><a href="#" class="py-2 d-block">Join Us</a></li>
-              <li><a href="#" class="py-2 d-block">Blog</a></li>
-              <li><a href="#" class="py-2 d-block">Privacy &amp; Policy</a></li>
-              <li><a href="#" class="py-2 d-block">Terms &amp; Conditions</a></li>
-              <li><a href="#" class="py-2 d-block">Careers</a></li>
-              <li><a href="#" class="py-2 d-block">Contact</a></li>
+              <li>
+                <router-link to="/about" class="py-2 d-block">
+                  Join Us
+                </router-link>
+              </li>
+              <li>
+                <router-link to="/blog" class="py-2 d-block">
+                  Blog
+                </router-link>
+              </li>
+              <li>
+                <router-link to="/privacy-policy" class="py-2 d-block">
+                  Privacy &amp; Policy
+                </router-link>
+              </li>
+              <li>
+                <router-link to="/terms-and-conditions" class="py-2 d-block">
+                  Terms &amp; Conditions
+                </router-link>
+              </li>
             </ul>
           </div>
         </div>
@@ -80,7 +102,13 @@
 </template>
 
 <script>
-export default {}
+export default {
+  data () {
+    return {
+      logoH: require('~/assets/images/logo_h.png')
+    }
+  }
+}
 </script>
 <style>
 

@@ -8,11 +8,11 @@
               <div class="services-1">
                 <div class="line" />
                 <div class="icon">
-                  <span class="flaticon-bolt" />
+                  <span class="fa fa-globe" />
                 </div>
                 <div class="media-body">
                   <h3 class="heading mb-3">
-                    Information Technology Consultancy
+                    Website Development
                   </h3>
                 </div>
               </div>
@@ -21,11 +21,11 @@
               <div class="services-1 color-1">
                 <div class="line" />
                 <div class="icon">
-                  <span class="flaticon-light-bulb" />
+                  <span class="fa fa-picture-o" />
                 </div>
                 <div class="media-body">
                   <h3 class="heading mb-3">
-                    Product Design Strategy
+                    Graphics <br>Design
                   </h3>
                 </div>
               </div>
@@ -34,11 +34,11 @@
               <div class="services-1 color-2">
                 <div class="line" />
                 <div class="icon">
-                  <span class="flaticon-cyber" />
+                  <span class="fa fa-code" />
                 </div>
                 <div class="media-body">
                   <h3 class="heading mb-3">
-                    Cyber Security &amp; Web Development
+                    Web <br>Application
                   </h3>
                 </div>
               </div>

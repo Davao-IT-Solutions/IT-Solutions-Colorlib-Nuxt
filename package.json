@@ -16,7 +16,8 @@
     "front-matter-markdown": "^0.4.4",
     "frontmatter-markdown-loader": "^3.6.0",
     "netlify-cms": "^2.10.54",
-    "nuxt": "^2.13.0"
+    "nuxt": "^2.13.0",
+    "vue-owl-carousel": "^2.0.3"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^3.0.0",

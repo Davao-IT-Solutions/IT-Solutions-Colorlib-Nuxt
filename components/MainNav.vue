@@ -5,9 +5,8 @@
   >
     <div class="container">
       <a class="navbar-brand" href="/">
-        DAVAO
-        <span>IT</span>
-        Solutions
+        <img :src="logoH2" style="width:100%" class="d-xl-block d-lg-block d-md-none d-xs-none">
+        <img :src="logoH1" style="width:100%" class="d-xl-none d-lg-none d-md-block d-xs-block">
       </a>
       <button
         class="navbar-toggler"
@@ -39,12 +38,12 @@
             </router-link>
           </li>
           <li class="nav-item">
-            <router-link to="/case-study" class="nav-link">
-              Case Study
+            <router-link to="/products" class="nav-link">
+              Products
             </router-link>
           </li>
           <li class="nav-item">
-            <router-link to="/blogs" class="nav-link">
+            <router-link to="/blog" class="nav-link">
               Blog
             </router-link>
           </li>
@@ -69,13 +68,32 @@
 export default {
   data () {
     return {
-      bgImg: require('~/assets/images/bg_1.jpg')
+      bgImg: require('~/assets/images/bg_1.jpg'),
+      logoH1: require('~/assets/images/logo_h.png'),
+      logoH2: require('~/assets/images/logo_h2.png')
     }
   }
 }
 </script>
 <style>
+.ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover {
+    color: blue;
+}
+.ftco-navbar-light .navbar-nav > .nav-item.cta > .nav-link:hover {
+    color: yellow;
+}
 .ftco-navbar-light .navbar-nav > .nav-item > .nav-link.nuxt-link-exact-active {
     color: blue;
+}
+.ftco-navbar-light .navbar-nav > .nav-item.cta > .nav-link.nuxt-link-exact-active {
+    color: yellow;
+}
+.navbar-brand {
+  width: 250px;
+}
+@media (max-width: 989px) {
+  .ftco-navbar-light .navbar-nav > .nav-item > .nav-link.nuxt-link-exact-active {
+    color: yellow;
+  }
 }
 </style>

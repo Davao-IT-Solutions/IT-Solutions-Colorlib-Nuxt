@@ -2,6 +2,14 @@
   <div>
     <Hero />
     <Intro />
+    <About />
+    <Stats />
+    <Services />
+    <Strategy />
+    <Faqs />
+    <Insights />
+    <Blogs />
+    <ContactForm />
   </div>
 </template>
 
