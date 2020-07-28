@@ -1,5 +1,5 @@
 backend:
-  name: bitbucket
+  name: github
   repo: Davao-IT-Solutions/IT-Solutions-Colorlib-Nuxt
 publish_mode: editorial_workflow
 media_folder: "static/images/uploads"
