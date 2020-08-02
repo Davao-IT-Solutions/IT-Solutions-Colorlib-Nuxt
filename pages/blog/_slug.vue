@@ -4,9 +4,7 @@
     <section class="ftco-section">
       <div class="container">
         <div class="row">
-          <div class="col-lg-12">
-            {{ blogPost.html }}
-          </div>
+          <div class="col-lg-12" v-html="blogPost.html" />
         </div>
       </div>
     </section>

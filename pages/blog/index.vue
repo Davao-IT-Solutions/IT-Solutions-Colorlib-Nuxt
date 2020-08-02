@@ -8,9 +8,9 @@
           <div v-for="(blog, index) in blogPosts" :key="index" class="col-md-4 d-flex">
             <div class="blog-entry justify-content-end">
               <router-link
-                :to="`/blog/$(blog.slug)`"
+                :to="`/blog/${blog.slug}`"
                 class="block-20"
-                :style="'background-image: url('+blog.attributes.thumbnail+');'"
+                :style="`background-image: url('${blog.attributes.thumbnail}');`"
               />
               <div class="text mt-3 float-right d-block">
                 <div class="d-flex align-items-center pt-2 mb-4 topp">
@@ -24,7 +24,7 @@
                 </div>
                 <h3 class="heading">
                   <router-link
-                    :to="`/blog/$(blog.slug)`"
+                    :to="`/blog/${blog.slug}`"
                   >
                     {{ blog.attributes.title }}
                   </router-link>
