@@ -109,31 +109,6 @@
                 </div>
               </div>
             </div>
-
-            <div class="card">
-              <div id="headingFour" class="card-header p-0" role="tab">
-                <h2 class="mb-0">
-                  <button
-                    href="#collapseFour"
-                    class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link"
-                    data-parent="#accordion"
-                    data-toggle="collapse"
-                    aria-expanded="false"
-                    aria-controls="collapseFour"
-                  >
-                    <p class="mb-0">
-                      What are those requirements for ITSolutions?
-                    </p>
-                    <i class="fa" aria-hidden="true" />
-                  </button>
-                </h2>
-              </div>
-              <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
-                <div class="card-body py-3 px-0">
-                  <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>

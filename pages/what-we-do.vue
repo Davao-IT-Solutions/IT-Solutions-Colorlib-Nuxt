@@ -1,13 +1,11 @@
 <template>
   <div>
-    <Hero2 title="About Us" />
+    <Hero2 title="What We Do" />
   </div>
 </template>
 
 <script>
-export default {
-  scrollToTop: true
-}
+export default {}
 </script>
 
 <style>

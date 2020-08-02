@@ -54,6 +54,7 @@ export default {
   ** https://nuxtjs.org/guide/plugins
   */
   plugins: [
+    { src: '~/plugins/vue-fb-customer-chat.js', ssr: false }
   ],
   /*
   ** Auto import components
@@ -72,8 +73,14 @@ export default {
   */
   modules: [
     // Doc: https://github.com/nuxt/content
-    '@nuxt/content'
+    '@nuxt/content',
+    '@nuxtjs/gtm'
   ],
+
+  gtm: {
+    id: 'GTM-KRFMQMC'
+  },
+
   /*
   ** Content module configuration
   ** See https://content.nuxtjs.org/configuration
@@ -104,6 +111,10 @@ export default {
         }
       })
     }
+  },
+
+  scrollBehavior(to, from, savedPosition) {
+    return { x: 0, y: 0 }
   }
 
 }

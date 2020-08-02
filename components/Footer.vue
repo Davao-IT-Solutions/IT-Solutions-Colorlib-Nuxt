@@ -23,16 +23,11 @@
             <ul class="list-unstyled">
               <li>
                 <router-link to="/about" class="py-2 d-block">
-                  About
+                  About Us
                 </router-link>
               </li>
               <li>
-                <router-link to="/contact" class="py-2 d-block">
-                  Contact
-                </router-link>
-              </li>
-              <li>
-                <router-link to="/about" class="py-2 d-block">
+                <router-link to="/what-we-do" class="py-2 d-block">
                   What We Do
                 </router-link>
               </li>
@@ -47,12 +42,12 @@
         <div class="col-md">
           <div class="ftco-footer-widget mb-4">
             <h2 class="ftco-heading-2">
-              Legal
+              More
             </h2>
             <ul class="list-unstyled">
               <li>
-                <router-link to="/about" class="py-2 d-block">
-                  Join Us
+                <router-link to="/join-us" class="py-2 d-block">
+                  Free Web Templates
                 </router-link>
               </li>
               <li>

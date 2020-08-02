@@ -7,12 +7,7 @@
         </div>
         <div class="col-md-6 p-3 pl-md-5 py-5 bg-primary">
           <div class="row justify-content-start pb-3">
-            <div class="col-md-12 heading-section heading-section-white ">
-              <h2 class="mb-4">
-                Consult us here in <span>Davao City</span>
-              </h2>
-              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
-            </div>
+            <div class="col-md-12 heading-section heading-section-white " />
           </div>
           <div class="row">
             <div class="col-md-6 justify-content-center counter-wrap ">

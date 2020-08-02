@@ -1,6 +1,7 @@
 <template>
   <div>
     <Hero2 title="Services" />
+    <Services />
   </div>
 </template>
 

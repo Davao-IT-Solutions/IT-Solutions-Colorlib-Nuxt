@@ -1,9 +1,13 @@
 backend:
   name: github
   repo: Davao-IT-Solutions/IT-Solutions-Colorlib-Nuxt
+
+site_url: https://davao-it-solutions.netlify.app
+
 publish_mode: editorial_workflow
 media_folder: "static/images/uploads"
 public_folder: "/images/uploads"
+
 collections:
   - name: "blog"
     label: "Blog"
@@ -15,10 +19,66 @@ collections:
       - {label: "Type", name: "type", widget: "string", required: false}
       - {label: "Language", name: "language", widget: "string", required: false}
       - {label: "Title", name: "title", widget: "string", required: true}
-      - {label: Summary 164-220, name: summary, widget: text, required: true, pattern: ['.{164,220}', "Must be within 164 and 220 characters"]}
+      - {label: "Summary", name: summary, widget: text, required: true, pattern: ['.{164,220}', "Must be within 164 and 220 characters"]}
       - {label: "Publish Date", name: "date", widget: "date", required: true}
       - {label: "Updated Date", name: "update", widget: "date", required: false}
       - {label: "Author", name: "author", widget: "string", required: true}
       - {label: "Author Link", name: "authorlink", widget: "string", required: false}
       - {label: "Featured Image", name: "thumbnail", widget: "image", required: true}
       - {label: "Body", name: "body", widget: "markdown", required: true}
+
+  - name: "bloglist"
+    label: "Blog List"
+    file: "content/blogs.json"
+    description: 'Blog List'
+          - name: authors
+            label: Authors
+            label_singular: 'Author'
+            widget: list
+            fields:
+              - { label: 'Name', name: 'name', widget: 'string', hint: 'First and Last' }
+              - { label: 'Description', name: 'description', widget: 'markdown' }
+
+  - name: 'settings'
+    label: 'Settings'
+    delete: false # Prevent users from deleting documents in this collection
+    editor:
+      preview: false
+    files:
+      - name: 'general'
+        label: 'Site Settings'
+        file: 'content/settings.json'
+        description: 'General Site Settings'
+        fields:
+          - { label: 'Global title', name: 'site_title', widget: 'string' }
+          - label: 'Post Settings'
+            name: posts
+            widget: 'object'
+            fields:
+              - {
+                  label: 'Number of posts on frontpage',
+                  name: front_limit,
+                  widget: number,
+                  min: 1,
+                  max: 10,
+                }
+              - { label: 'Default Author', name: author, widget: string }
+              - {
+                  label: 'Default Thumbnail',
+                  name: thumb,
+                  widget: image,
+                  class: 'thumb',
+                  required: false,
+                }
+      - name: 'authors'
+        label: 'Authors'
+        file: 'content/authors.yml'
+        description: 'Author descriptions'
+        fields:
+          - name: authors
+            label: Authors
+            label_singular: 'Author'
+            widget: list
+            fields:
+              - { label: 'Name', name: 'name', widget: 'string', hint: 'First and Last' }
+              - { label: 'Description', name: 'description', widget: 'markdown' }

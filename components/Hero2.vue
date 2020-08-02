@@ -29,5 +29,13 @@ export default {
 }
 </script>
 <style>
-
+.hero-wrap.hero-wrap-2 {
+    height: 400px;
+}
+.hero-wrap.hero-wrap-2 .overlay {
+    height: 400px;
+}
+.hero-wrap.hero-wrap-2 .slider-text {
+    height: 400px;
+}
 </style>

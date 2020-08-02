@@ -19,7 +19,7 @@
               <h3 class="heading mb-3">
                 Website Development
               </h3>
-              <p>203 Fake St. Mountain View, San Francisco, California, USA</p>
+              <p>Gain impact on how your customers perceive your company, make the first best impression</p>
             </div>
           </div>
         </div>
@@ -33,7 +33,7 @@
               <h3 class="heading mb-3">
                 Graphics Design
               </h3>
-              <p>A small river named Duden flows by their place and supplies.</p>
+              <p>Convey your ideas in an effective and beautiful way through graphics.</p>
             </div>
           </div>
         </div>
@@ -47,7 +47,7 @@
               <h3 class="heading mb-3">
                 Web Application Development
               </h3>
-              <p>A small river named Duden flows by their place and supplies.</p>
+              <p>We bring your business to new heights of integration. Be accessible anywhere and anyway.</p>
             </div>
           </div>
         </div>

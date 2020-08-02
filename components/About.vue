@@ -6,7 +6,7 @@
           <h2 class="mb-4">
             More than <span>5+</span> years of experience in <span>Website Development</span>
           </h2>
-          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+          <p>We provide a wide range of IT services ranging from small projects in a Small to Medium-sized businesses environment to larger projects that encompasses an entire company in a large corporate environment.</p>
         </div>
       </div>
       <div class="row">
@@ -16,8 +16,8 @@
               <span class="fa fa-globe" />
             </div>
             <div class="text">
-              <h3>Web Development</h3>
-              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+              <h3>Website Development</h3>
+              <p>Gain impact on how your customers perceive your company, make the first best impression</p>
             </div>
           </div>
         </div>
@@ -31,7 +31,7 @@
             </div>
             <div class="text">
               <h3>Web Application Development</h3>
-              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+              <p>We bring your business to new heights of integration. Be accessible anywhere and anyway.</p>
             </div>
           </div>
         </div>
