@@ -6,7 +6,7 @@ export default {
   ** Nuxt rendering mode
   ** See https://nuxtjs.org/api/configuration-mode
   */
-  mode: 'spa',
+  mode: 'universal',
   /*
   ** Nuxt target
   ** See https://nuxtjs.org/api/configuration-target
@@ -91,7 +91,16 @@ export default {
    * Generate config
    */
   generate: {
-    routes: [].concat(blogs.map(blog => `/blog/${blog.slug}`))
+    routes () {
+      const fs = require('fs')
+      const path = require('path')
+      return fs.readdirSync('./content/blog').map((file) => {
+        return {
+          route: `/blog/${path.parse(file).name}`, // Return the slug
+          payload: require(`./content/blog/${file}`)
+        }
+      })
+    }
   },
 
   /*
@@ -113,7 +122,7 @@ export default {
     }
   },
 
-  scrollBehavior(to, from, savedPosition) {
+  scrollBehavior (to, from, savedPosition) {
     return { x: 0, y: 0 }
   }
 

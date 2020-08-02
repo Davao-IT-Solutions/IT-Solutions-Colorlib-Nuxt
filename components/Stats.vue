@@ -7,14 +7,18 @@
         </div>
         <div class="col-md-6 p-3 pl-md-5 py-5 bg-primary">
           <div class="row justify-content-start pb-3">
-            <div class="col-md-12 heading-section heading-section-white " />
+            <div class="col-md-12 heading-section heading-section-white ">
+              <h2 class="mb-4">
+                Our <span>Records</span>
+              </h2>
+            </div>
           </div>
           <div class="row">
             <div class="col-md-6 justify-content-center counter-wrap ">
               <div class="block-18 mb-4">
                 <div class="text">
                   <strong class="number" data-number="750">0</strong>
-                  <span>Project Complete</span>
+                  <span>Projects Completed</span>
                 </div>
               </div>
             </div>
@@ -31,14 +35,6 @@
                 <div class="text">
                   <strong class="number" data-number="478">0</strong>
                   <span>Business Partners</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 justify-content-center counter-wrap ">
-              <div class="block-18 mb-4">
-                <div class="text">
-                  <strong class="number" data-number="780">0</strong>
-                  <span>IT Consultant</span>
                 </div>
               </div>
             </div>

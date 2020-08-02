@@ -26,6 +26,17 @@ collections:
       - {label: "Author Link", name: "authorlink", widget: "string", required: false}
       - {label: "Featured Image", name: "thumbnail", widget: "image", required: true}
       - {label: "Body", name: "body", widget: "markdown", required: true}
+  - name: 'services'
+    label: 'Services'
+    folder: 'content/services'
+    create: true
+    slug: "{{slug}}"
+    sort: "date:desc"
+    fields:
+      - {label: "Name", name: "name", widget: "string", required: true}
+      - {label: "Summary", name: summary, widget: text, required: true, pattern: ['.{164,220}', "Must be within 164 and 220 characters"]}
+      - {label: "CSS Icon", name: "css_icon", widget: "string", required: true}
+      - {label: "Body", name: "body", widget: "markdown", required: true}
   - name: 'settings'
     label: 'Settings'
     delete: false # Prevent users from deleting documents in this collection
@@ -57,6 +68,14 @@ collections:
                   class: 'thumb',
                   required: false,
                 }
+      - name: 'stats'
+        label: 'Statistics'
+        file: 'content/statistics.json'
+        description: 'Our Records Config'
+        fields:
+          - { label: 'Projects Completed', name: 'projects_completed', widget: 'string' }
+          - { label: 'Happy Clients', name: 'happy_clients', widget: 'string' }
+          - { label: 'Business Partners', name: 'business_partners', widget: 'string' }
       - name: 'authors'
         label: 'Authors'
         file: 'content/authors.yml'
