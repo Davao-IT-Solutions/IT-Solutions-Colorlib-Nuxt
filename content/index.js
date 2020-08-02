@@ -27,24 +27,3 @@ const getFiles = dir => {
   return filelist
 }
  
-/**
- * Write blogs json file
- */
-const writeBlogs = async () => {
-  const fileArray = await getFiles('content/blog/')
- 
-  // Order array by date (default asc)
-  const sortedArray = await fileArray.sort((a, b) => {
-    return a.date.getTime() - b.date.getTime()
-  })
- 
-  // Reverse array and write to JSON
-  const reversedArray = await sortedArray.reverse()
-  const jsonContent = await JSON.stringify(reversedArray)
- 
-  fs.writeFile('content/blogs.json', jsonContent, err => {
-    if (err) throw new Error(err)
-  })
-}
- 
-writeBlogs()
