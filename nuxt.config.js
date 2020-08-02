@@ -1,6 +1,3 @@
-
-import blogs from './content/blogs.json'
-
 export default {
   /*
   ** Nuxt rendering mode
