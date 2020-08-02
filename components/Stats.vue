@@ -17,7 +17,7 @@
             <div class="col-md-6 justify-content-center counter-wrap ">
               <div class="block-18 mb-4">
                 <div class="text">
-                  <strong class="number" data-number="750">0</strong>
+                  <strong class="number">{{ projects_completed }}</strong>
                   <span>Projects Completed</span>
                 </div>
               </div>
@@ -25,7 +25,7 @@
             <div class="col-md-6 justify-content-center counter-wrap ">
               <div class="block-18 mb-4">
                 <div class="text">
-                  <strong class="number" data-number="568">0</strong>
+                  <strong class="number">{{ happy_clients }}</strong>
                   <span>Happy Clients</span>
                 </div>
               </div>
@@ -33,7 +33,7 @@
             <div class="col-md-6 justify-content-center counter-wrap ">
               <div class="block-18 mb-4">
                 <div class="text">
-                  <strong class="number" data-number="478">0</strong>
+                  <strong class="number">{{ business_partners }}</strong>
                   <span>Business Partners</span>
                 </div>
               </div>
@@ -46,10 +46,15 @@
 </template>
 
 <script>
+import stats from '../content/statistics.json'
+
 export default {
   data () {
     return {
-      image1: require('~/assets/images/about.jpg')
+      image1: require('~/assets/images/about.jpg'),
+      projects_completed: stats.projects_completed,
+      happy_clients: stats.happy_clients,
+      business_partners: stats.business_partners
     }
   }
 }

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Hero2 :title="title" />
+    <Hero2 :title="blogPost.attributes.title" />
     <section class="ftco-section">
       <div class="container">
         <div class="row">

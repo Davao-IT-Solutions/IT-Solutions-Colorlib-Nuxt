@@ -140,7 +140,7 @@ export default {
     routes () {
       const r = []
       r.concat(blogs.map(blog => `/blog/${blog.slug}`))
-      r.concat(services.map(service => `/service/${service.slug}`))
+      r.concat(services.map(service => `/services/${service.slug}`))
       return r
     }
   },
@@ -161,6 +161,12 @@ export default {
           vue: true
         }
       })
+    }
+  },
+
+  router: {
+    scrollBehavior (to, from, savedPosition) {
+      return { x: 0, y: 0 }
     }
   }
 

@@ -1,10 +1,10 @@
 <template>
   <div>
-    <Hero2 :title="title" />
+    <Hero2 :title="servicePost.attributes.title" />
     <section class="ftco-section">
       <div class="container">
         <div class="row">
-          <div class="col-lg-12" v-html="blogPost.html" />
+          <div class="col-lg-12" v-html="servicePost.html" />
         </div>
       </div>
     </section>
@@ -15,9 +15,9 @@
 export default {
   scrollToTop: true,
   async asyncData ({ params, payload }) {
-    if (payload) { return { blogPost: payload } } else {
+    if (payload) { return { servicePost: payload } } else {
       return {
-        blogPost: await require(`~/content/blog/${params.slug}.md`)
+        servicePost: await require(`~/content/services/${params.slug}.md`)
       }
     }
   }
