@@ -22,19 +22,19 @@
             </h2>
             <ul class="list-unstyled">
               <li>
-                <router-link to="/about" class="py-2 d-block">
+                <nuxt-link to="/about" class="py-2 d-block">
                   About Us
-                </router-link>
+                </nuxt-link>
               </li>
               <li>
-                <router-link to="/what-we-do" class="py-2 d-block">
+                <nuxt-link to="/what-we-do" class="py-2 d-block">
                   What We Do
-                </router-link>
+                </nuxt-link>
               </li>
               <li>
-                <router-link to="/contact" class="py-2 d-block">
+                <nuxt-link to="/contact" class="py-2 d-block">
                   Contact Us
-                </router-link>
+                </nuxt-link>
               </li>
             </ul>
           </div>
@@ -46,24 +46,24 @@
             </h2>
             <ul class="list-unstyled">
               <li>
-                <router-link to="/join-us" class="py-2 d-block">
+                <nuxt-link to="/join-us" class="py-2 d-block">
                   Free Web Templates
-                </router-link>
+                </nuxt-link>
               </li>
               <li>
-                <router-link to="/blog" class="py-2 d-block">
+                <nuxt-link to="/blog" class="py-2 d-block">
                   Blog
-                </router-link>
+                </nuxt-link>
               </li>
               <li>
-                <router-link to="/privacy-policy" class="py-2 d-block">
+                <nuxt-link to="/privacy-policy" class="py-2 d-block">
                   Privacy &amp; Policy
-                </router-link>
+                </nuxt-link>
               </li>
               <li>
-                <router-link to="/terms-and-conditions" class="py-2 d-block">
+                <nuxt-link to="/terms-and-conditions" class="py-2 d-block">
                   Terms &amp; Conditions
-                </router-link>
+                </nuxt-link>
               </li>
             </ul>
           </div>
