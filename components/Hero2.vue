@@ -19,11 +19,15 @@ export default {
     title: {
       type: String,
       default: 'About Us'
+    },
+    background: {
+      type: String,
+      default: 'bg_3.jpg'
     }
   },
   data () {
     return {
-      bgImg: require('~/assets/images/bg_3.jpg')
+      bgImg: require(`~/assets/images/${this.background}`)
     }
   }
 }
@@ -31,6 +35,8 @@ export default {
 <style>
 .hero-wrap.hero-wrap-2 {
     height: 400px;
+    background-size: cover;
+    background-position-y: center;
 }
 .hero-wrap.hero-wrap-2 .overlay {
     height: 400px;

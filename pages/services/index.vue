@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Hero2 title="Our Exclusive Services" />
+    <Hero2 title="Our Exclusive Services" background="work-8.jpg" />
 
     <section class="ftco-section services-section">
       <div class="container">

@@ -7,7 +7,7 @@
         <div class="row d-flex">
           <div v-for="(blog, index) in blogPosts" :key="index" class="col-md-4 d-flex">
             <div class="blog-entry justify-content-end">
-              <router-link
+              <nuxt-link
                 :to="`/blog/${blog.slug}`"
                 class="block-20"
                 :style="`background-image: url('${blog.attributes.thumbnail}');`"
@@ -23,11 +23,11 @@
                   </div>
                 </div>
                 <h3 class="heading">
-                  <router-link
+                  <nuxt-link
                     :to="`/blog/${blog.slug}`"
                   >
                     {{ blog.attributes.title }}
-                  </router-link>
+                  </nuxt-link>
                 </h3>
               </div>
             </div>

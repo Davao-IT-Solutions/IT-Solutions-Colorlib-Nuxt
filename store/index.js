@@ -8,6 +8,15 @@ export const mutations = {
     state.blogPosts = list
   },
   setServicePosts (state, list) {
+    list.sort((a, b) => {
+      let compare = 0
+      if (a.attributes.order > b.attributes.order) {
+        compare = 1
+      } else if (b.attributes.order > a.attributes.order) {
+        compare = -1
+      }
+      return compare
+    })
     state.servicePosts = list
   }
 }
@@ -29,5 +38,11 @@ export const actions = {
       return res
     })
     await commit('setServicePosts', servicePosts)
+  }
+}
+
+export const getters = {
+  displayOnHero: (state) => {
+    return state.servicePosts.filter(service => service.attributes.display_hero)
   }
 }

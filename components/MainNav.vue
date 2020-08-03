@@ -5,10 +5,10 @@
     :class="{ 'scrolled awake' : awake }"
   >
     <div class="container">
-      <a class="navbar-brand" href="/">
+      <nuxt-link class="navbar-brand" to="/">
         <img id="nav-logo-dark" :src="logoH2" class="d-xl-block d-lg-block d-md-none d-xs-none">
         <img id="nav-logo-light" :src="logoH1" class="d-xl-none d-lg-none d-md-block d-xs-block">
-      </a>
+      </nuxt-link>
       <button
         class="navbar-toggler"
         type="button"
@@ -24,42 +24,42 @@
       <div id="ftco-nav" class="collapse navbar-collapse">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <router-link to="/" class="nav-link">
+            <nuxt-link to="/" class="nav-link">
               Home
-            </router-link>
+            </nuxt-link>
           </li>
           <li class="nav-item">
-            <router-link to="/about" class="nav-link">
+            <nuxt-link to="/about" class="nav-link">
               About
-            </router-link>
+            </nuxt-link>
           </li>
           <li class="nav-item">
-            <router-link to="/services" class="nav-link">
+            <nuxt-link to="/services" class="nav-link">
               Services
-            </router-link>
+            </nuxt-link>
           </li>
           <!--
           <li class="nav-item">
-            <router-link to="/products" class="nav-link">
+            <nuxt-link to="/products" class="nav-link">
               Products
-            </router-link>
+            </nuxt-link>
           </li>
           -->
           <li class="nav-item">
-            <router-link to="/blog" class="nav-link">
+            <a href="https://blog.davao.me/" target="_blank" class="nav-link">
               Blog
-            </router-link>
+            </a>
           </li>
           <li class="nav-item">
-            <router-link to="/contact" class="nav-link">
+            <nuxt-link to="/contact" class="nav-link">
               Contact us
-            </router-link>
+            </nuxt-link>
           </li>
           <!--
           <li class="nav-item cta">
-            <router-link to="/free-consultation" class="nav-link">
+            <nuxt-link to="/free-consultation" class="nav-link">
               Free Consultation
-            </router-link>
+            </nuxt-link>
           </li>
           -->
         </ul>

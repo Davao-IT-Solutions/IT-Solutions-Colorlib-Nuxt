@@ -36,6 +36,8 @@ collections:
       - {label: "Title", name: "title", widget: "string", required: true}
       - {label: "Summary", name: summary, widget: text, required: true, pattern: ['.{10,220}', "Must be within 10 and 220 characters"]}
       - {label: "CSS Icon", name: "css_icon", widget: "string", required: false}
+      - {label: "Order", name: "order", widget: number, required: false, default: 0}
+      - {label: "Display on Hero", name: "display_hero", required: false, widget: "boolean", default: false}
       - {label: "Body", name: "body", widget: "markdown", required: false}
   - name: 'settings'
     label: 'Settings'
@@ -73,17 +75,27 @@ collections:
         file: 'content/statistics.json'
         description: 'Our Records Config'
         fields:
-          - { label: 'Projects Completed', name: 'projects_completed', widget: 'string' }
-          - { label: 'Happy Clients', name: 'happy_clients', widget: 'string' }
-          - { label: 'Business Partners', name: 'business_partners', widget: 'string' }
-      - name: 'authors'
-        label: 'Authors'
-        file: 'content/authors.yml'
-        description: 'Author descriptions'
+          - { label: 'Projects Completed', name: 'projects_completed', widget: 'number' }
+          - { label: 'Happy Clients', name: 'happy_clients', widget: 'number' }
+          - { label: 'Business Partners', name: 'business_partners', widget: 'number' }
+      - name: 'contact'
+        label: 'Contact Us'
+        file: 'content/contacts.json'
+        description: 'Contact Us Page'
         fields:
-          - name: authors
-            label: Authors
-            label_singular: 'Author'
+          - { label: 'Address', name: 'address', widget: 'string' }
+          - { label: 'Phone Number', name: 'phone', widget: 'string' }
+          - { label: 'Email Address', name: 'email', widget: 'string' }
+          - { label: 'Map URL', name: 'map_url', widget: 'string' }
+          - { label: 'Facebook Page URL', name: 'facebook_url', widget: 'string' }
+      - name: 'footer_links'
+        label: 'Footer Links'
+        file: 'content/footer_links.json'
+        description: 'Footer Links'
+        fields:
+          - name: links
+            label: Links
+            label_singular: 'Link'
             widget: list
             fields:
               - { label: 'Name', name: 'name', widget: 'string', hint: 'First and Last' }
