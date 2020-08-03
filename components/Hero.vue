@@ -7,7 +7,7 @@
           <div class="row">
             <div class="col-md-7">
               <p class="mb-4 pl-md-5 line">
-                We are team of talented designers making websites with Bootstrap, Vue, and Laravel.
+                We are team of talented designers making websites with Bootstrap, VueJs, NuxtJs, Laravel and CodeIgniter.
               </p>
             </div>
           </div>
