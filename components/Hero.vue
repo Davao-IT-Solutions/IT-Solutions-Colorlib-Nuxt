@@ -6,12 +6,12 @@
         <div class="col-md-8 mt-5 pt-md-5">
           <div class="row">
             <div class="col-md-7">
-              <p class="mb-4 pl-md-5 line">
+              <p class="mb-4 pl-md-5 line" data-aos="fade-right" data-aos-delay="200">
                 We are team of talented designers making websites with Bootstrap, VueJs, NuxtJs, Laravel and CodeIgniter.
               </p>
             </div>
           </div>
-          <h1 class="mb-4">
+          <h1 class="mb-4" data-aos="fade-right" data-aos-delay="400">
             Better <span class="website">WEBSITE</span> <br>For Your Business
           </h1>
         </div>

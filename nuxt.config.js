@@ -92,7 +92,8 @@ export default {
    ** Global CSS
    */
   css: [
-    '@/assets/css/style.css'
+    '@/assets/css/style.css',
+    'aos/dist/aos.css'
   ],
   /*
    ** Plugins to load before mounting the App
@@ -101,7 +102,9 @@ export default {
   plugins: [{
     src: '~/plugins/vue-fb-customer-chat.js',
     ssr: false
-  }],
+  },
+  { src: '~/plugins/aos.js', ssr: false }
+  ],
   /*
    ** Auto import components
    ** See https://nuxtjs.org/api/configuration-components

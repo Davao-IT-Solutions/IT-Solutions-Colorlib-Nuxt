@@ -4,7 +4,7 @@
       <div class="row justify-content-end">
         <div class="col-md-7">
           <div class="row no-gutters d-flex align-items-stretch">
-            <div v-for="(service, index) in services" :key="index" class="col-md-4 d-flex align-self-stretch ">
+            <div v-for="(service, index) in services" :key="index" class="col-md-4 d-flex align-self-stretch" data-aos="fade-up" :data-aos-delay="index * 300">
               <div class="services-1 color-2">
                 <nuxt-link :to="`/services/${service.slug}`" class="line" />
                 <div class="icon">
