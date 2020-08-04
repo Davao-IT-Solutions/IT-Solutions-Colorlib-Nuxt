@@ -90,20 +90,29 @@
             Copyright &copy; {{ current_year }} All rights reserved &middot; This template is made with <i class="fa fa-heart" aria-hidden="true" /> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
           </p>
-          <p>
-            <a href="https://www.netlify.com/" target="_blank" rel="noopener noreferrer">
-              <img class="mr-5" :src="require(`~/assets/images/netlify-logo-dark.png`)" width="100px">
-            </a>
-            <a href="https://nuxtjs.org/" target="_blank" rel="noopener noreferrer">
-              <img class="mr-5" :src="require(`~/assets/images/nuxtjs-typo-white.svg`)" width="100px">
-            </a>
-            <a href="https://vuejs.org/" target="_blank" rel="noopener noreferrer">
-              <img class="mr-5" :src="require(`~/assets/images/vuejs.png`)" width="100px">
-            </a>
-            <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
-              <img :src="require(`~/assets/images/github_logo.png`)" width="100px">
-            </a>
-          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-3 col-sm-6 col-xs-6 text-center">
+          <a href="https://www.netlify.com/" target="_blank" rel="noopener noreferrer">
+            <img :src="require(`~/assets/images/netlify-logo-dark.png`)" width="100px">
+          </a>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-6 text-center">
+          <a href="https://nuxtjs.org/" target="_blank" rel="noopener noreferrer">
+            <img :src="require(`~/assets/images/nuxtjs-typo-white.svg`)" width="100px">
+          </a>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-6 text-center">
+          <a href="https://vuejs.org/" target="_blank" rel="noopener noreferrer">
+            <img :src="require(`~/assets/images/vuejs.png`)" width="100px">
+          </a>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-6 text-center">
+          <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+            <img :src="require(`~/assets/images/github_logo.png`)" width="100px">
+          </a>
         </div>
       </div>
     </div>
@@ -127,5 +136,7 @@ export default {
 }
 </script>
 <style>
-
+.ftco-footer {
+  padding-bottom: 3em;
+}
 </style>

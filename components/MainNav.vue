@@ -135,6 +135,13 @@ nav.navbar {
   #nav-logo-light {
     display:block;
   }
+  .ftco-navbar-light.scrolled.awake #nav-logo-light {
+    display:none;
+  }
+  .ftco-navbar-light.scrolled.awake #nav-logo-dark {
+    display:block;
+    margin-left: 1rem;
+  }
 }
 @media (max-width: 320px) {
   .navbar-brand {

@@ -34,6 +34,7 @@ export default {
 #hero1 {
   height: 100vh;
   display: block;
+  position: relative;
 }
 #hero1 .overlay {
   height: 100vh;
@@ -46,6 +47,18 @@ export default {
 #hero1 .slider-text .line {
   margin-top: 110px;
 }
+@media (max-width: 425px) {
+  #hero1, #hero1 .overlay {
+    height: 100%;
+  }
+  #hero1 .slider-text p.line:after {
+    background: none;
+  }
+  #hero1 .slider-text {
+    margin: 0 auto;
+  }
+}
+
 @media (max-width: 989px) {
   #hero1 .slider-text .line {
     margin-top: 0px;

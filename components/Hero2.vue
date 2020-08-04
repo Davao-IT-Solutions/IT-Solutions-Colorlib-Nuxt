@@ -37,6 +37,7 @@ export default {
     height: 400px;
     background-size: cover;
     background-position-y: center;
+    position: relative;
 }
 .hero-wrap.hero-wrap-2 .overlay {
     height: 400px;
